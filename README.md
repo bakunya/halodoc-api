@@ -32,7 +32,7 @@ GET localhost:3000/articles/page/1
 #### 2. GET /article-content/:slug/:external_id
 Get article content
 ```url
-GET /article-content/ini-10-makanan-sumber-vitamin-d-bantu-cegah-osteoporosis/a338dbd3-75c0-4051-a550-e4366a4e26fa
+GET localhost:3000/article-content/ini-10-makanan-sumber-vitamin-d-bantu-cegah-osteoporosis/a338dbd3-75c0-4051-a550-e4366a4e26fa
 ```
 
 #### 3. GET localhost:3000/article/similar/:external_id
