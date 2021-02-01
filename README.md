@@ -29,7 +29,7 @@ Get list of articles
 ```url
 GET localhost:3000/articles/page/1
 ```
-#### 2. GET /article-content/:slug/:external_id
+#### 2. GET localhost:3000/article-content/:slug/:external_id
 Get article content
 ```url
 GET localhost:3000/article-content/ini-10-makanan-sumber-vitamin-d-bantu-cegah-osteoporosis/a338dbd3-75c0-4051-a550-e4366a4e26fa
@@ -50,7 +50,7 @@ Get detail category of medicine
 ```url
 GET localhost:3000/medicine/categories/produk-susu/page/1
 ```
-#### 6. GET /medicine/detail/:slug
+#### 6. GET localhost:3000/medicine/detail/:slug
 Get medicine product
 ```url
 GET localhost:3000/medicine/detail/nutrilon-royal-3-madu-susu-pertumbuhan-bubuk-400-gr
