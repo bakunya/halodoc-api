@@ -1,6 +1,9 @@
 # [halodoc](https://halodoc.com) api
-
 Unofficial API and Web Scraping from halodoc.com
+
+
+## Support creator & developer
+Treat me a cup of coffee [in here](https://trakteer.id/bakunya/tip)
 
 ## Terms of Service
 ### This software is only used for educational.
@@ -143,8 +146,5 @@ PUT /hospital/location
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Support creator & developer
-treat me a cup of coffee [in here](https://trakteer.id/bakunya/tip)
-
 ## License
-[MIT](https://choosealicense.com/licenses/mit/) \
+[MIT](https://choosealicense.com/licenses/mit/)
