@@ -13,6 +13,7 @@ async function articlesController(req, res, next) {
             next_page: similar.data.next_page,
         })
     } catch (err) {
+        console.log(err)
         res.status(400)
         next(Error(err.message))
     }
