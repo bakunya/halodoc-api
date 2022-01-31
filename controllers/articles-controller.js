@@ -13,6 +13,9 @@ async function articlesController(req, res, next) {
         
         request(url, (error, response, body) => {
             try {
+                console.log(error)
+                console.log(response)
+                console.log(body)
                 if(error) throw Error(error)
                 const result = JSON.parse(body)
                 result?.result?.forEach(itm => stripHtml(itm.summary).result)
