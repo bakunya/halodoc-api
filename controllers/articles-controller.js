@@ -12,10 +12,14 @@ async function articlesController(req, res, next) {
         
         
         request(url, (error, response, body) => {
-            if(error) next(error?.message)
-            const result = JSON.parse(body)
-            result?.result?.forEach(itm => stripHtml(itm.summary).result)
-            return res.status(200).json(result)
+            try {
+                if(error) throw Error(error)
+                const result = JSON.parse(body)
+                result?.result?.forEach(itm => stripHtml(itm.summary).result)
+                return res.status(200).json(result)
+            } catch(er) {
+                next(er.message)
+            }
         });
     } catch (err) {
         console.log(err)
