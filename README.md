@@ -2,7 +2,11 @@
 
 Unofficial API and Web Scraping from halodoc.com
 
-## pre-request
+## Terms of Service
+### This software is only used for educational.
+### Any responsibility beyond the responsibility of the developer.
+
+## Pre-request
 
 #### 1. [Node.js](https://nodejs.org/) has installed on your machine
 #### 2. [NPM](https://npmjs.com/) has installed on your machine
@@ -139,8 +143,8 @@ PUT /hospital/location
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+## Support creator & developer
+treat me a cup of coffee [in here](https://trakteer.id/bakunya/tip)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/) \
-Any responsibility beyond the responsibility of the developer.
