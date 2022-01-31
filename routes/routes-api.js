@@ -5,6 +5,8 @@ const {slow, limiter} = require("../utils/limit-options")
 function routes_api() {
     const router = express.Router()
 
+    router.get("/articles-trending", slow, limiter, controller.articlesTrending)
+
     router.get("/articles/page/:count", slow, limiter, controller.articles)
 
     router.get("/article-content/:slug/:external_id", slow, limiter, controller.article)
@@ -21,9 +23,13 @@ function routes_api() {
 
     router.get("/doctor/:slug", slow, limiter, controller.doctor)
 
+    router.get("/doctor/specialities/:count", slow, limiter, controller.doctorSpecialities)
+    
     router.get("/hospital/:slug", slow, limiter, controller.hospital)
 
-    router.get("/hospital/departements/:slug", slow, limiter, controller.hospitalDepartements)
+    router.get("/hospital/departments/:slug", slow, limiter, controller.hospitalDepartments)
+
+    router.put("/doctor/search", slow, limiter, controller.doctorSearch)
 
     router.put("/hospital/locations-sugestion", slow, limiter, controller.sugestion)
 
